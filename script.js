@@ -127,18 +127,37 @@ if (reservationForm) {
     });
 }
 
-// Lazy Loading for Images (Native)
-if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-        img.src = img.dataset.src;
+// Enhanced Lazy Loading for Background Images
+document.addEventListener('DOMContentLoaded', function() {
+    const imageElements = document.querySelectorAll('.service-image, .portfolio-image');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: '50px'
     });
-} else {
-    // Fallback for browsers that don't support lazy loading
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-    document.body.appendChild(script);
+
+    imageElements.forEach(img => {
+        img.classList.add('lazy-load');
+        imageObserver.observe(img);
+    });
+});
+
+// Preload critical images
+function preloadImage(url) {
+    const img = new Image();
+    img.src = url;
 }
+
+// Preload hero images
+preloadImage('images/photohero1.png');
+preloadImage('images/photohero2.png');
 
 // Navigation Effects
 const navigation = document.querySelector('.navigation');

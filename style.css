@@ -231,6 +231,26 @@ section {
     margin-top: 0;
 }
 
+/* Image optimization */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+.service-image,
+.portfolio-image,
+.hero-image,
+.studio-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
 .hero-slider {
     height: 100%;
     position: absolute;
