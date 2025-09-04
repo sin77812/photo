@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Moment, Our Art - Premium Photo Studio</title>
+    <meta name="description" content="당신의 특별한 순간을 작품처럼 남깁니다. 증명사진, 가족사진, 바디프로필 전문 프리미엄 포토 스튜디오">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SEO Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Premium Photo Studio",
+        "image": "https://example.com/logo.jpg",
+        "description": "증명사진, 가족사진, 바디프로필 전문 프리미엄 포토 스튜디오",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "서울특별시 강남구 테헤란로 123",
+            "addressLocality": "서울",
+            "addressRegion": "서울특별시",
+            "postalCode": "06234",
+            "addressCountry": "KR"
+        },
+        "telephone": "+82-2-1234-5678",
+        "openingHours": "Mo-Fr 10:00-20:00, Sa 10:00-18:00"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">Premium Studio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="nav-cta">예약하기</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Floating CTA Button -->
+    <a href="#reservation" class="floating-cta">예약하기</a>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-image" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('images/photohero1.png') center/cover;">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-image" style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('images/photohero2.png') center/cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">Your Moment, Our Art</h1>
+            <p class="hero-subtitle animate-fade-up">증명사진 · 가족사진 · 바디프로필 전문 스튜디오</p>
+            <p class="hero-description animate-fade-up">당신의 특별한 순간을 작품처럼 남깁니다.</p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">About Studio</h2>
+            <div class="about-content">
+                <div class="studio-image-wrapper animate-fade-up">
+                    <div class="studio-image" style="background: url('images/abouts.png') center/cover; height: 500px;">
+                    </div>
+                </div>
+                <div class="about-text animate-fade-up">
+                    <p>프리미엄 포토 스튜디오는 당신의 특별한 순간을 예술 작품처럼 담아냅니다. 최고급 장비와 전문 포토그래퍼의 섬세한 감각으로 완성되는 프리미엄 촬영 경험을 제공합니다.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item animate-fade-up">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C7A875" stroke-width="2">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                                <path d="M2 17L12 22L22 17"/>
+                                <path d="M2 12L12 17L22 12"/>
+                            </svg>
+                        </div>
+                        <h3>Professional</h3>
+                        <p>최고의 전문성</p>
+                    </div>
+                    <div class="feature-item animate-fade-up">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C7A875" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>Comfort</h3>
+                        <p>편안한 분위기</p>
+                    </div>
+                    <div class="feature-item animate-fade-up">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C7A875" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3>Luxury</h3>
+                        <p>럭셔리한 경험</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-fade-up">
+                    <div class="service-image" style="background: url('images/idphoto1.png') center/cover; height: 300px;">
+                    </div>
+                    <div class="service-content">
+                        <h3>증명사진</h3>
+                        <p>심플하고 세련된 증명사진으로 전문적인 이미지를 완성합니다.</p>
+                        <ul class="service-features">
+                            <li>다양한 규격 지원</li>
+                            <li>즉시 출력 가능</li>
+                            <li>전문 리터칭</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-fade-up">
+                    <div class="service-image" style="background: url('images/family1.png') center/cover; height: 300px;">
+                    </div>
+                    <div class="service-content">
+                        <h3>가족사진</h3>
+                        <p>따뜻하고 자연스러운 가족의 순간을 영원히 간직합니다.</p>
+                        <ul class="service-features">
+                            <li>자연스러운 연출</li>
+                            <li>스튜디오/야외 촬영</li>
+                            <li>프리미엄 액자 제공</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-fade-up">
+                    <div class="service-image" style="background: url('images/bodypro1.png') center/cover; height: 300px;">
+                    </div>
+                    <div class="service-content">
+                        <h3>바디프로필</h3>
+                        <p>강렬하고 드라마틱한 바디프로필로 최고의 순간을 기록합니다.</p>
+                        <ul class="service-features">
+                            <li>전문 조명 세팅</li>
+                            <li>포징 디렉팅</li>
+                            <li>고급 리터칭</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-fade-up">
+                    <div class="service-image" style="background: url('images/profile1.png') center/cover; height: 300px;">
+                    </div>
+                    <div class="service-content">
+                        <h3>프로필 사진</h3>
+                        <p>비즈니스와 SNS를 위한 전문적이고 매력적인 프로필을 완성합니다.</p>
+                        <ul class="service-features">
+                            <li>LinkedIn/이력서용</li>
+                            <li>개인 브랜딩 컨설팅</li>
+                            <li>다양한 배경 선택</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">Portfolio</h2>
+            <div class="portfolio-filter animate-fade-up">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="id">증명</button>
+                <button class="filter-btn" data-filter="family">가족</button>
+                <button class="filter-btn" data-filter="body">바디프로필</button>
+                <button class="filter-btn" data-filter="profile">프로필</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- 증명사진 포트폴리오 -->
+                <div class="portfolio-item animate-fade-up" data-category="id">
+                    <a href="images/idphoto1.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/idphoto1.png') center/cover; height: 250px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item animate-fade-up" data-category="id">
+                    <a href="images/idphoto2.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/idphoto2.png') center/cover; height: 350px;">
+                        </div>
+                    </a>
+                </div>
+                <!-- 가족사진 포트폴리오 -->
+                <div class="portfolio-item animate-fade-up" data-category="family">
+                    <a href="images/family1.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/family1.png') center/cover; height: 300px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item animate-fade-up" data-category="family">
+                    <a href="images/family2.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/family2.png') center/cover; height: 400px;">
+                        </div>
+                    </a>
+                </div>
+                <!-- 바디프로필 포트폴리오 -->
+                <div class="portfolio-item animate-fade-up" data-category="body">
+                    <a href="images/bodypro1.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/bodypro1.png') center/cover; height: 450px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item animate-fade-up" data-category="body">
+                    <a href="images/bodypro2.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/bodypro2.png') center/cover; height: 350px;">
+                        </div>
+                    </a>
+                </div>
+                <!-- 프로필 사진 포트폴리오 -->
+                <div class="portfolio-item animate-fade-up" data-category="profile">
+                    <a href="images/profile1.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/profile1.png') center top/cover; height: 450px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item animate-fade-up" data-category="profile">
+                    <a href="images/profile2.png" data-lightbox="portfolio">
+                        <div class="portfolio-image" style="background: url('images/profile2.png') center top/cover; height: 450px;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing & Reservation Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">Pricing & Reservation</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card animate-fade-up">
+                    <h3>증명사진</h3>
+                    <div class="price">₩15,000~</div>
+                    <ul class="pricing-features">
+                        <li>기본 리터칭 포함</li>
+                        <li>다양한 규격 제공</li>
+                        <li>즉시 출력 가능</li>
+                        <li>디지털 파일 제공</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn-gold">예약하기</a>
+                </div>
+                <div class="pricing-card featured animate-fade-up">
+                    <div class="featured-badge">POPULAR</div>
+                    <h3>가족사진</h3>
+                    <div class="price">₩150,000~</div>
+                    <ul class="pricing-features">
+                        <li>1시간 촬영</li>
+                        <li>전문 리터칭 20장</li>
+                        <li>프리미엄 액자 1개</li>
+                        <li>전체 원본 제공</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn-gold">예약하기</a>
+                </div>
+                <div class="pricing-card animate-fade-up">
+                    <h3>바디프로필</h3>
+                    <div class="price">₩420,000~</div>
+                    <ul class="pricing-features">
+                        <li>2시간 촬영</li>
+                        <li>전문 리터칭 30장</li>
+                        <li>포징 디렉팅</li>
+                        <li>고급 보정 작업</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn-gold">예약하기</a>
+                </div>
+                <div class="pricing-card animate-fade-up">
+                    <h3>프로필 사진</h3>
+                    <div class="price">₩80,000~</div>
+                    <ul class="pricing-features">
+                        <li>30분 촬영</li>
+                        <li>전문 리터칭 10장</li>
+                        <li>배경 2종 선택</li>
+                        <li>당일 전송 가능</li>
+                    </ul>
+                    <a href="#reservation" class="btn btn-gold">예약하기</a>
+                </div>
+            </div>
+            
+            <!-- Reservation Form -->
+            <div id="reservation" class="reservation-form animate-fade-up">
+                <h3>예약은 간단하게, 경험은 특별하게</h3>
+                <form id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="성함" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="연락처" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">촬영 종류 선택</option>
+                                <option value="id">증명사진</option>
+                                <option value="family">가족사진</option>
+                                <option value="body">바디프로필</option>
+                                <option value="profile">프로필 사진</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" name="datetime" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit">예약 문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">Customer Reviews</h2>
+            <div class="swiper testimonial-slider animate-fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"정말 만족스러운 촬영이었습니다. 편안한 분위기에서 자연스러운 사진을 얻을 수 있었어요."</p>
+                            <div class="testimonial-author">
+                                <span class="author-initial">K</span>
+                                <div class="author-info">
+                                    <h4>김○○ 고객님</h4>
+                                    <p>가족사진 촬영</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"프로페셔널한 촬영과 섬세한 리터칭까지, 모든 과정이 완벽했습니다."</p>
+                            <div class="testimonial-author">
+                                <span class="author-initial">L</span>
+                                <div class="author-info">
+                                    <h4>이○○ 고객님</h4>
+                                    <p>바디프로필 촬영</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"급하게 필요했던 증명사진인데 빠르고 퀄리티 높게 작업해주셔서 감사합니다."</p>
+                            <div class="testimonial-author">
+                                <span class="author-initial">P</span>
+                                <div class="author-info">
+                                    <h4>박○○ 고객님</h4>
+                                    <p>증명사진 촬영</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">Contact & Location</h2>
+            <div class="contact-content">
+                <div class="map-wrapper animate-fade-up">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3276897962876!2d127.02796631530856!3d37.500128779810255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15aee9ab0cb%3A0x31793fc63e0cf9d3!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZw!5e0!3m2!1sko!2skr!4v1616568922957!5m2!1sko!2skr"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="contact-info animate-fade-up">
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>서울특별시 강남구 테헤란로 123<br>프리미엄 빌딩 5층</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contact</h3>
+                        <p>Tel: 02-1234-5678<br>
+                        Email: contact@premiumstudio.kr</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Hours</h3>
+                        <p>평일: 10:00 - 20:00<br>
+                        토요일: 10:00 - 18:00<br>
+                        일요일: 예약제 운영</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0E0E0E">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0E0E0E">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cta animate-fade-up">
+                <a href="#reservation" class="btn btn-gold">예약하기</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Premium Photo Studio</div>
+                <p class="footer-copy">&copy; 2024 Premium Photo Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
